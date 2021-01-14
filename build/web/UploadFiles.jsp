@@ -70,11 +70,11 @@
           </div>
             <div style="width:300px;float:left;border:solid thin;margin-left: 10px;padding:10px;overflow: auto;"> <h4>LargerPart</h4><img src="temp/<%=x[0]%>l_<%=fn%>" ></div>
             <div style="width:300px;float:left;border:solid thin;margin-left: 10px;padding:10px;overflow: auto;"> <h4>Smaller Part</h4><img src="temp/<%=x[0]%>s_<%=fn%>" ></div>
-          <div style="width:300px;float:left;border:solid thin;margin-left: 10px;padding:10px;overflow: auto;">  <h4>Water Marked Larger Part</h4>
+          <div style="width:300px;float:left;border:solid thin;margin-left: 10px;padding:10px;overflow: auto;">  <h4></h4>
     
     <img src="temp/<%=x[0]%>l_<%=fn%>" >
           </div>
-             <div style="width:300px;float:left;border:solid thin;margin-left: 10px;padding:10px;overflow: auto;">  <h4>Water Marked Smaller Part</h4>
+             <div style="width:300px;float:left;border:solid thin;margin-left: 10px;padding:10px;overflow: auto;">  <h4></h4>
     
     <img src="temp/<%=x[0]%>s_<%=fn%>" >
           </div>

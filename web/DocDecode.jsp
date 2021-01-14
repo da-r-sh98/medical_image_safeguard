@@ -1,9 +1,10 @@
+<%@taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql"%>
 <%-- 
     Document   : DocDecode
     Created on : 22 Feb, 2018, 3:07:10 PM
     Author     : S7
 --%>
-
+<%@page import="doctorsearch.connect"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -158,6 +159,22 @@ function cl()
             
              
         </div>
-        </form>  
+            
+       
+                
+             </form> 
+          
+       
+           <%
+                         
+               connect cc=new connect();
+               cc.save("INSERT INTO 'result'('pt_id' , 'description')" + " VALUES ('first_name' ,'last_name') ");    
+             
+              
+
+            %>
+                </form>
+          </form>
+       
 </body>
 </html>

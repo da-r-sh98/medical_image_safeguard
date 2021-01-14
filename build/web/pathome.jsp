@@ -198,9 +198,12 @@
                          <li class=""><a href="pathome.jsp"><i class="icon-angle-right"></i>Home</a></li>
                     
                         <li class=""><a href="pathome.jsp?pg=mya"><i class="icon-angle-right"></i>My Appointments</a></li>
+                        
+                        <li class=""><a href="pathome.jsp?pg=ch"><i class="icon-angle-right"></i>My Results</a></li>
              
                        
-                         <li class=""><a href="pathome.jsp?pg=ch"><i class="icon-angle-right"></i>change password</a></li>
+                         <li class=""><a href="pathome.jsp?pg=ah"><i class="icon-angle-right"></i>change password</a></li>
+                              
                            </ul>
                 </li>   
                
@@ -272,6 +275,13 @@
                   if(pg.equals("ch"))
                   {
                   %>
+                   <%@include file="My Results.jsp" %>
+                    <%
+                  }
+                  if(pg.equals("ah"))
+                  {
+                  %>
+                  
                   <%@include file="changepass.jsp" %>
                     <%
                   }

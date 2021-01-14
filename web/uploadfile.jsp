@@ -3,7 +3,7 @@
     Created on : 26 Jul, 2017, 12:16:11 PM
     Author     : S7
 --%>
-
+<%@page import="doctorsearch.connect"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -22,7 +22,29 @@
                 <td></td>
                 <td><input type="submit" value="upload"></td>
             </tr>
+            
+             
         </table>
+        <%
+            String a;
+         %>
+            
+        <%
+            try{
+            connect cc1=new connect();
+            
+        cc1.read("select * from result where pt_id='1'");
+        while(cc1.rs.next())
+        {
+        %>
+        <input type="text" name="textresult" value="<%=cc1.rs.getString("description")%>" />
+        <%
+            
+          }
+          }
+catch(Exception e){}
+%>
+          
         </form>
         
     </body>
